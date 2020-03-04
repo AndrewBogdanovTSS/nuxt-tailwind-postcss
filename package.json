@@ -27,6 +27,7 @@
     "postcss-responsive-type": "^1.0.0",
     "postcss-url": "^8.0.0",
     "postcss-variables": "^1.1.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "tailwindcss": "^1.2.0"
   }
 }
