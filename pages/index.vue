@@ -47,8 +47,9 @@ export default {
  // Example of using nested postCSS plugin
  .item {
    &-nested {
+     @apply p-3;
      // Example of using global postcss-variables
-     background-color: $colors.green;
+     border: 1px solid $colors.green;
    }
  }
 
