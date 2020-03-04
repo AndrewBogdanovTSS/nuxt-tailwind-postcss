@@ -5,6 +5,7 @@
 > - Custom properties
 > - PostCSS variables
 > - Autoprefixer
+> - PurgeCSS
 > - and much more
 > 
 > You can forget about SASS now ;)
