@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
+    <div class="item-nested">
+      <logo class="item-nested-logo" />
       <h1 class="title">
         test-postcss
       </h1>
@@ -38,20 +38,19 @@ export default {
 }
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
+<style lang="postcss">
+  /*@import "assets/styles/root.pcss";*/
+  //$green: #00FF00;
+ //Sample `apply` at-rules with Tailwind CSS
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+
+ .item {
+   &-nested {
+     background-color: $colors.green;
+   }
+ }
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,

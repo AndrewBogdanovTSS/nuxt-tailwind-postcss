@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    'assets/styles/index'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -34,7 +35,8 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss',
+    // '@nuxtjs/tailwindcss',
+    'nuxt-purgecss'
   ],
   /*
   ** Nuxt.js modules
@@ -48,10 +50,39 @@ export default {
   ** Build configuration
   */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
+    postcss: {
+      parser: 'postcss-comment',
+      // Add plugin names as key and arguments as value
+      // Install them before as dependencies with npm or yarn
+      plugins: {
+        'postcss-import': {},
+        'postcss-url': {},
+        'tailwindcss': {},
+        'postcss-nested': {},
+        'postcss-variables': {
+          globals: {
+            colors: {
+              green: '#00FF00'
+            }
+          }
+        },
+        'postcss-custom-properties': {},
+        'postcss-responsive-type': {},
+        'postcss-hexrgba': {},
+        'autoprefixer': {}
+      },
+      preset: {
+        // Change the postcss-preset-env settings
+        autoprefixer: {
+          grid: true
+        }
+      }
+    },
     extend (config, ctx) {
     }
-  }
+  },
+  purgeCSS: {
+    mode: 'postcss',
+    whitelistPatterns: []
+  },
 }
