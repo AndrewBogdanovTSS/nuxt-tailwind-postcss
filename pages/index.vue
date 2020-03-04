@@ -39,15 +39,14 @@ export default {
 </script>
 
 <style lang="postcss">
-  /*@import "assets/styles/root.pcss";*/
-  //$green: #00FF00;
  //Sample `apply` at-rules with Tailwind CSS
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
-
+ // Example of using nested postCSS plugin
  .item {
    &-nested {
+     // Example of using global postcss-variables
      background-color: $colors.green;
    }
  }

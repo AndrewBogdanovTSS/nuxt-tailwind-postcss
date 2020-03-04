@@ -51,6 +51,8 @@ export default {
   */
   build: {
     postcss: {
+      // Allows the use of single line comments
+      // in .pscss and .vue files
       parser: 'postcss-comment',
       // Add plugin names as key and arguments as value
       // Install them before as dependencies with npm or yarn
@@ -59,7 +61,14 @@ export default {
         'postcss-url': {},
         'tailwindcss': {},
         'postcss-nested': {},
+        // Be sure to include this plugin
+        // before 'postcss-custom-properties'
+        // otherwise you won't be able to use
+        // postCSS variables inside custom properties
         'postcss-variables': {
+          // We can add global variables here
+          // and use them in external .pcss files
+          // or .vue components
           globals: {
             colors: {
               green: '#00FF00'
@@ -83,6 +92,8 @@ export default {
   },
   purgeCSS: {
     mode: 'postcss',
+    // You can exclude some classes from purge here
+    // Example: [/^my-custom-class/]
     whitelistPatterns: []
   },
 }
