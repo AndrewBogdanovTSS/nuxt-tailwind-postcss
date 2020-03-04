@@ -40,6 +40,9 @@ export default {
 
 <!--Using lang is optional, may be useful for some IDEs -->
 <style lang="postcss">
+  // Adding local postcss-variable
+  $grey: #35495e;
+
  //Sample `apply` at-rules with Tailwind CSS
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
@@ -59,14 +62,15 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  // Example of using local postcss-variables
+  color: $grey;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: $grey;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
