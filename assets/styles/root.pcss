@@ -1,9 +1,8 @@
-$green: #00FFF0;
-
 :root {
+  // Example of using global postcss-variables inside css custom properties
   --color-green: $colors.green;
 }
 
 .container {
-  color: $colors.green;
+  color: var(--color-green);
 }
