@@ -38,6 +38,7 @@ export default {
 }
 </script>
 
+<!--Using lang is optional, may be useful for some IDEs -->
 <style lang="postcss">
  //Sample `apply` at-rules with Tailwind CSS
 .container {
