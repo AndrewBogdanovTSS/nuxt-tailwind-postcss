@@ -14,6 +14,10 @@ function mapObject(obj, fn, byKeys = false) {
 }
 
 module.exports = {
+  // Enabling important mode
+  // for utilities to override
+  // vue component css
+  important: true,
   theme: {
     colors: require('./config/colors'),
     // Example of generating screen sizes based on the external json config
