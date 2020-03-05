@@ -2,7 +2,8 @@
   <div class="container">
     <div class="item-nested">
       <logo class="item-nested-logo" />
-      <h1 class="title">
+      <!-- Adding example for responsive style usage -->
+      <h1 class="title md:border md:border-green">
         test-postcss
       </h1>
       <h2 class="subtitle">
