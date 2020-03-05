@@ -24,6 +24,7 @@
     "postcss-hexrgba": "^2.0.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
+    "postcss-nested-props": "^2.0.0",
     "postcss-responsive-type": "^1.0.0",
     "postcss-url": "^8.0.0",
     "postcss-variables": "^1.1.1",

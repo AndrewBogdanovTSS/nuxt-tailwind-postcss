@@ -5464,6 +5464,15 @@ postcss-modules-values@^3.0.0:
     icss-utils "^4.0.0"
     postcss "^7.0.6"
 
+postcss-nested-props@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-nested-props/-/postcss-nested-props-2.0.0.tgz#91ad31b05cbfbf0ff8a38b6c22ef46efbdb0b03a"
+  integrity sha512-fwq48WtIGZCjPMAjUAT6ZFkGZxPmlT+MVA+KE5QtnqORIa1n4rKEr2KQ2yS+cZOH1oEOb5zc/BoPcPe4+FR8+Q==
+  dependencies:
+    postcss "^6.0.14"
+    pseudo-classes "^1.0.0"
+    pseudo-elements "^1.1.0"
+
 postcss-nested@^4.1.1, postcss-nested@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/postcss-nested/-/postcss-nested-4.2.1.tgz#4bc2e5b35e3b1e481ff81e23b700da7f82a8b248"
@@ -5786,7 +5795,7 @@ postcss-variables@^1.1.1:
   dependencies:
     postcss "^6.0.9"
 
-postcss@^6.0.0, postcss@^6.0.6, postcss@^6.0.9:
+postcss@^6.0.0, postcss@^6.0.14, postcss@^6.0.6, postcss@^6.0.9:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   integrity sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==
@@ -5885,6 +5894,16 @@ prr@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
   integrity sha1-0/wRS6BplaRexok/SEzrHXj19HY=
+
+pseudo-classes@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pseudo-classes/-/pseudo-classes-1.0.0.tgz#60a69b67395c36ff119c4d1c86e1981785206b96"
+  integrity sha1-YKabZzlcNv8RnE0chuGYF4Uga5Y=
+
+pseudo-elements@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/pseudo-elements/-/pseudo-elements-1.1.0.tgz#9ba6dd8ac3ce1f3d7d36d4355aa3e28d08391f28"
+  integrity sha1-m6bdisPOHz19NtQ1WqPijQg5Hyg=
 
 pseudomap@^1.0.2:
   version "1.0.2"
