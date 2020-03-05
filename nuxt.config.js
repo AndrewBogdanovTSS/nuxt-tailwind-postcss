@@ -1,3 +1,4 @@
+import colors from './config/colors'
 
 export default {
   mode: 'universal',
@@ -34,6 +35,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    // Doc: https://purgecss.com/guides/nuxt.html
     'nuxt-purgecss'
   ],
   /*
@@ -55,9 +57,11 @@ export default {
       // Add plugin names as key and arguments as value
       // Install them before as dependencies with npm or yarn
       plugins: {
+        // This plugin should come first for imports to work correctly later on
         'postcss-import': {},
         'postcss-url': {},
-        'tailwindcss': {},
+        // Make sure `nested-props` comes before `nested`
+        'postcss-nested-props': {},
         'postcss-nested': {},
         // Be sure to include this plugin
         // before 'postcss-custom-properties'
@@ -68,15 +72,21 @@ export default {
           // and use them in external .pcss files
           // or .vue components
           globals: {
-            colors: {
-              green: '#00FF00'
-            }
+            // Color values are imported from the json file
+            colors
           }
         },
         'postcss-custom-properties': {},
         'postcss-responsive-type': {},
         'postcss-hexrgba': {},
+        // Make sure that tailwind generation comes after
+        // all other postcss plugins
+        // otherwise it may brake the build
+        'tailwindcss': {},
+        // Example of tailwind custom path usage
+        // 'tailwindcss' : require('tailwindcss')(join(__dirname, '/config/tailwind.config.js')),
         'autoprefixer': {}
+
       },
       preset: {
         // Change the postcss-preset-env settings
