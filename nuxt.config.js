@@ -36,7 +36,8 @@ export default {
   */
   buildModules: [
     // Doc: https://purgecss.com/guides/nuxt.html
-    'nuxt-purgecss'
+    // Purging CSS only in production for faster dev builds
+    ...(process.env.NODE_ENV === 'production' ? [] : ['nuxt-purgecss'])
   ],
   /*
   ** Nuxt.js modules
