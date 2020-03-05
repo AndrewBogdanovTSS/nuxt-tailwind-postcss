@@ -45,7 +45,13 @@ export default {
 
  //Sample `apply` at-rules with Tailwind CSS
 .container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+  @apply min-h-screen flex justify-center items-center text-center mx-auto !important;
+  // Example of nested-props usage
+  transition: {
+    property: transform;
+    duration: 0.35s;
+    timing-function: ease;
+  };
 }
  // Example of using nested postCSS plugin
  .item {
