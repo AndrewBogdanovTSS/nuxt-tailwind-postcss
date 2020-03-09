@@ -1,4 +1,4 @@
-import colors from './config/colors'
+import globals from './services/css/vars'
 
 export default {
   mode: 'universal',
@@ -72,10 +72,7 @@ export default {
           // We can add global variables here
           // and use them in external .pcss files
           // or .vue components
-          globals: {
-            // Color values are imported from the json file
-            colors
-          }
+          globals
         },
         'postcss-custom-properties': {},
         'postcss-responsive-type': {},
@@ -85,9 +82,8 @@ export default {
         // otherwise it may brake the build
         'tailwindcss': {},
         // Example of tailwind custom path usage
-        // 'tailwindcss' : require('tailwindcss')(join(__dirname, '/config/tailwind.config.js')),
+        // 'tailwindcss' : './config/tailwind.config.js',
         'autoprefixer': {}
-
       },
       preset: {
         // Change the postcss-preset-env settings
