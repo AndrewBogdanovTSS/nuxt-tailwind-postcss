@@ -18,6 +18,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "hex-rgb": "^4.1.0",
     "nuxt-purgecss": "^0.2.1",
     "postcss-comment": "^2.0.0",
     "postcss-custom-properties": "^9.1.1",
@@ -29,6 +30,8 @@
     "postcss-url": "^8.0.0",
     "postcss-variables": "^1.1.1",
     "prettier": "^1.19.1",
-    "tailwindcss": "^1.2.0"
+    "rgb-hex": "^3.0.0",
+    "tailwindcss": "^1.2.0",
+    "tailwindcss-theming": "^2.4.2"
   }
 }
