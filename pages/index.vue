@@ -59,7 +59,7 @@ export default {
    &-nested {
      @apply p-3;
      // Example of using global postcss-variables
-     border: 1px solid $colors.green;
+     border: 1px solid $color.green;
    }
  }
 
