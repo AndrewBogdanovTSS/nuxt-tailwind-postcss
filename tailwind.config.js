@@ -24,5 +24,7 @@ module.exports = {
     screens:mapObject(require('./config/breakpoints'), size => `${size}px`)
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require('./theme.config')
+  ]
 }
