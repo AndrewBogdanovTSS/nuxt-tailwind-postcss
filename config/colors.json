@@ -1,10 +1,6 @@
 {
-  "transparent": "transparent",
   "white": "#ffffff",
   "black": "#000000",
-  "black30": "#0000004d",
-  "black50": "#00000080",
-  "black80": "#000000cc",
   "dark": "#424242",
   "grey": "#dedede",
   "pale": "#f5f5f5",
